@@ -1,0 +1,9 @@
+---
+- name: Withdraw Validator Rewards
+  hosts: "{{ target | default('all') }}"
+  gather_facts: false
+  vars_files:
+    - '{{ var_file }}'
+
+  roles:
+    - withdraw_rewards

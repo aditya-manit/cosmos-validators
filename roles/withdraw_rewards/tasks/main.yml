@@ -1,0 +1,12 @@
+---
+- name: Execute the script
+  ansible.builtin.command:
+    cmd: "{{ user_dir }}/scripts/distribution_withdrawal/{{ network }}.sh"
+    chdir: "{{ user_dir }}/scripts/distribution_withdrawal/"
+  environment:
+    PATH: "{{ path }}"  # Use the path variable from vars/main.yml
+  register: script_output
+
+- name: Print script output
+  ansible.builtin.debug:
+    msg: "{{ script_output.stdout }}"
