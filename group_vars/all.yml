@@ -1,14 +1,33 @@
-# node_exporter
+# ansible_settings:
+ansible_user: root
+ansible_port: 22
+ansible_ssh_private_key_file: "/Users/aditya/.ssh/id_rsa"
+
+# user_settings:
+user_dir: "/root"
+#user_dir: "/home/{{ ansible_user }}"
+path: "/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/go/bin:{{ user_dir }}/go/bin"
+
+# node_settings:
+node_name: "BRAND-{{ network }}-{{ type }}"
+
+# node_exporter_settings:
+node_exporter: true
+
+# versions:
 node_exporter_version: '1.6.0'
-
-# promtail
 promtail_version: '2.6.1'
-
-# go
 go_version: '1.21.1'
-
-# cosmovisor
 cosmovisor_version: 'v1.0.0'
 
-# Snapshot base URL
+# pagerduty_settings:
+pagerduty_key: "SECRET_KEY"
+
+# snapshot:
 snapshot_base_url: 'https://polkachu.com/api/v2/chain_snapshots'
+snapshot_endpoint: 'http://10.0.0.2000'
+
+# promtail_settings:
+promtail: false
+log_monitor: 'http://10.0.0.100:3100'
+log_name: "PREFIX_{{ network }}_{{ type }}"
