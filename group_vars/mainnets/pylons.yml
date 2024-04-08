@@ -1,0 +1,15 @@
+network: pylons
+folder: '.pylons'
+daemon: pylonsd
+chain_id: 'pylons-mainnet-1'
+node_version: 'v1.1.4'
+repo: 'https://github.com/Pylons-tech/pylons'
+genesis: 'https://raw.githubusercontent.com/Pylons-tech/pylons/main/networks/pylons-mainnet-1/genesis.json'
+seeds: ''
+custom_port_prefix: 904
+minimum_gas_price: '0ubedrock'
+gas_params: '--fees 2000ubedrock --gas auto --gas-adjustment 1.9'
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 30

@@ -1,0 +1,15 @@
+network: tgrade
+folder: '.tgrade'
+daemon: tgrade
+chain_id: 'tgrade-mainnet-1'
+node_version: 'v2.0.4'
+repo: 'https://github.com/confio/tgrade'
+genesis: 'https://raw.githubusercontent.com/confio/tgrade-networks/main/mainnet-1/config/genesis.json'
+seeds: '0c3b7d5a4253216de01b8642261d4e1e76aee9d8@45.76.202.195:26656,1e1fc55291968f97b7c9016ebd244fa186050a6f@138.201.16.60:26656'
+custom_port_prefix: 905
+minimum_gas_price: '0.05utgd'
+gas_params: '--gas auto --gas-adjustment 1.9 --fees=29000utgd'
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 30

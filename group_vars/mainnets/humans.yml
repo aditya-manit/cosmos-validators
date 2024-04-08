@@ -1,0 +1,15 @@
+network: humans
+folder: '.humansd'
+daemon: humansd
+chain_id: 'humans_1089-1'
+node_version: 'v1.0.0'
+repo: 'https://github.com/humansdotai/humans'
+genesis: 'https://raw.githubusercontent.com/humansdotai/mainnets/main/mainnet/1/genesis_1089-1.json'
+seeds: ''
+custom_port_prefix: 901
+minimum_gas_price: '0aheart'
+gas_params: '--gas auto --fees 4761420000000000aheart --gas-adjustment 1.1'
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 30

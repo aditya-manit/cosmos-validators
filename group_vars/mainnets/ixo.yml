@@ -1,0 +1,16 @@
+network: ixo
+folder: '.ixod'
+daemon: ixod
+chain_id: 'ixo-5'
+node_version: 'v3.0.0'
+repo: 'https://github.com/ixofoundation/ixo-blockchain'
+genesis: 'https://github.com/ixofoundation/genesis/raw/main/ixo-5/genesis.json.tar.gz'
+genesis_processing: 'targz'
+seeds: ''
+custom_port_prefix: 902
+minimum_gas_price: '0.025uixo'
+gas_params: '--gas auto --fees=5000uixo --gas-adjustment 1.4'
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 30

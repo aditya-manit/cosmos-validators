@@ -1,0 +1,15 @@
+network: qwoyn
+folder: '.qwoynd'
+daemon: qwoynd
+chain_id: 'qwoyn-1'
+node_version: 'v5.4.2'
+repo: 'https://github.com/cosmic-horizon/QWOYN'
+genesis: 'https://raw.githubusercontent.com/cosmic-horizon/mainnet/main/genesis.json'
+seeds: '3ba8858372b8b6314b29d43f8fc344cc54f4ffe0@45.77.126.244:26656'
+custom_port_prefix: 900
+minimum_gas_price: '0.0qwoyn'
+gas_params: '--gas auto'
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 30

@@ -1,0 +1,15 @@
+network: c4e
+folder: '.c4e-chain'
+daemon: c4ed
+chain_id: 'perun-1'
+node_version: 'v1.3.1'
+repo: 'https://github.com/chain4energy/c4e-chain.git'
+genesis: 'https://raw.githubusercontent.com/chain4energy/c4e-chains/main/perun-1/genesis.json'
+seeds: ''
+custom_port_prefix: 903
+minimum_gas_price: '0uc4e'
+gas_params: '--gas auto -y --fees 800uc4e'
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 30
