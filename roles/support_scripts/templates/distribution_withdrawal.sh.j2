@@ -14,4 +14,4 @@ VALIDATOR_STATUS=$(echo ${PASSPHRASE} | {{ daemon }} keys show ${KEY} --bech val
 VALIDATOR=$(echo ${VALIDATOR_STATUS} | jq -r ".address")
 
 # Withdraw rewards
-echo ${PASSPHRASE} | {{ daemon }} tx distribution withdraw-rewards ${VALIDATOR} --commission --yes --from ${KEY} {{ tx_flags }}
+echo ${PASSPHRASE} | {{ daemon }} tx distribution withdraw-rewards ${VALIDATOR} --commission --yes --from ${KEY} --chain-id {{ chain_id }} {{ tx_flags }}
