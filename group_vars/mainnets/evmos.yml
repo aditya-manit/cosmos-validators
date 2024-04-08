@@ -12,6 +12,7 @@ minimum_gas_price: '250000000aevmos'
 custom_port_prefix: 134
 upgrade_folder: v16.0.0
 update_website_immediately: true
+gas_params: '--gas 5000000 --gas-adjustment 1.8 --fees 100000000000000000aevmos'
 
 # [Optional] Snapshot
 snapshot_hour: 1

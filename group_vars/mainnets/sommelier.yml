@@ -10,6 +10,7 @@ custom_port_prefix: 141
 upgrade_folder: v7
 update_website_immediately: true
 minimum_gas_price: '0usomm'
+gas_params: '--gas auto --fees 800usomm'
 
 # [Optional] Snapshot
 snapshot_hour: 3

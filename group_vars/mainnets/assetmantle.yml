@@ -11,6 +11,7 @@ minimum_gas_price: '0umntl'
 custom_port_prefix: 146
 upgrade_folder: 'v1-Yellow%20Spaceship'
 update_website_immediately: false
+gas_params: '--fees 200umntl --gas auto --gas-adjustment 1.9'
 
 # [Optional] Snapshot
 snapshot_hour: 5

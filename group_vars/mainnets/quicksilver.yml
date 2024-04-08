@@ -10,6 +10,7 @@ custom_port_prefix: 111
 upgrade_folder: v1.5.3
 update_website_immediately: false
 minimum_gas_price: '0uqck'
+gas_params: '--gas auto -y --fees 800uqck --gas-adjustment 1.8'
 
 # [Optional] Snapshot
 snapshot_hour: 5

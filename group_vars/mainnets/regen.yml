@@ -9,6 +9,7 @@ seeds: 'aebb8431609cb126a977592446f5de252d8b7fa1@104.236.201.138:26656,8542cd7e6
 minimum_gas_price: '0.025uregen'
 custom_port_prefix: 227
 upgrade_folder: v5.1
+gas_params: '--fees 9000uregen --gas auto --gas-adjustment 1.9'
 
 # [Optional] Snapshot
 snapshot_hour: 12

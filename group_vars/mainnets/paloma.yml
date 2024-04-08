@@ -9,6 +9,7 @@ custom_port_prefix: 121
 upgrade_folder: 'v1.12.2'
 seeds: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:12156'
 update_website_immediately: false
+gas_params: '--gas=auto --gas-prices=0.04ugrain --gas-adjustment 1.8'
 
 # [Optional] Snapshot
 snapshot_hour: 1

@@ -13,6 +13,7 @@ custom_port_prefix: 151
 minimum_gas_price: '0.007uaxl'
 upgrade_folder: 'v0.35'
 update_website_immediately: false
+gas_params: '--gas auto --gas-adjustment 1.8'
 
 # [Optional] Snapshot
 snapshot_hour: 6

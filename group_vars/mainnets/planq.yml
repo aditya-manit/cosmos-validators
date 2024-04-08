@@ -9,6 +9,7 @@ seeds: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:20356'
 custom_port_prefix: 203
 update_website_immediately: true
 minimum_gas_price: '0aplanq'
+gas_params: '--gas-adjustment 1.45 --gas=1000000 --gas-prices=30000000000aplanq'
 
 # [Optional] Snapshot
 snapshot_hour: 1

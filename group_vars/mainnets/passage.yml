@@ -10,6 +10,7 @@ upgrade_folder: v2.4.0
 custom_port_prefix: 156
 update_website_immediately: true
 minimum_gas_price: '0upasg'
+gas_params: '--gas auto --fees 100upasg --gas-adjustment 1.4'
 
 # [Optional] Snapshot
 snapshot_hour: 8
