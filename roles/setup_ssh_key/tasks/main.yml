@@ -1,0 +1,7 @@
+---
+- name: Add or Ensure SSH public key is present in authorized_keys
+  ansible.builtin.authorized_key:
+    user: "{{ ansible_ssh_user }}"
+    state: present
+    key: "{{ lookup('file', '/Users/aditya/.ssh/id_rsa.pub') }}"
+  ignore_errors: yes

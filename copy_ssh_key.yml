@@ -1,0 +1,6 @@
+---
+- name: Setup SSH Key
+  hosts: '{{ target }}'
+  become: yes
+  roles:
+    - setup_ssh_key
