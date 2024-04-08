@@ -6,15 +6,18 @@
   vars_files:
     - '{{ var_file }}'
   roles:
-    - prepare
+    - role: prepare
+      when: execute_prepare|default(false)|bool
+
 
 - name: Main
   hosts: '{{ target }}'
   gather_facts: false
   vars_files:
     - '{{ var_file }}'
+  vars:
+    type: "{{ type | default('main') }}"
   roles:
-    # - node_install
     - node_initialize
     - node_configure
     - node_launch
