@@ -40,7 +40,7 @@
 
 - name: regular genesis download
   include_tasks: genesis_default.yml
-  when: genesis_processing is undefined
+  when: genesis_processing is undefined or genesis_processing == "json"
 
 - name: zip genesis download
   include_tasks: genesis_zip.yml
