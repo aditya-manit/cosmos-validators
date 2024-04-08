@@ -9,11 +9,11 @@
 
 - name: install node_exporter
   import_tasks: node_exporter.yml
-  when: node_exporter|bool == true
+  when: node_exporter|default(true)|bool == true
 
 - name: install promtail
   import_tasks: promtail.yml
-  when: promtail|bool == true
+  when: promtail|default(false)|bool == true
 
 - name: firewall setup
   import_tasks: firewall.yml
